@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+}
+
+#gameCanvas {
+background: linear-gradient(to bottom, #001f3f 0%, #003366 50%, #004d99 100%);
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+    #gameCanvas {
+        width: 100%;
+        height: 80vh;
+        max-width: 360px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 481) {
+    #gameCanvas {
+        width: 70%;
+        height: 80vh;
+        max-width: 360px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #gameCanvas {
+        width: 800px;
+        height: 500px;
+    }
+}
+
+#title {
+    font-family: 'Honk', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#playButton {
+    font-family: 'Honk', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+#gameOver {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    position:absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#restart {
+    font-family: 'Honk', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    margin-top: 90px;
+    text-decoration: none;
+}
+
+#restart a {
+    text-decoration: none;
+}
+
+.site-footer {
+    background: #001f3f;
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.footer-column {
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
+}
+
+.footer-column a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 0.8rem;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.dmca-badge {
+    margin-bottom: 1rem;
+}
+
+.copyright {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-column {
+        min-width: unset;
+        width: 100%;
+    }
+}
+
+/* About Section Styling */
+.about-section {
+    background: rgba(0, 31, 63, 0.9);
+    color: white;
+    padding: 2rem;
+    margin: 30px;
+    margin-top: 50px;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about {
+    padding: 1rem;
+}
+
+.about-title {
+    color: #007bff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 1rem 0;
+    text-transform: uppercase;
+}
+
+.about-content {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.about-content b {
+    color: #007bff;
+    font-weight: normal;
+}
+
+.about-content a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-content a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 1.5rem 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .about-section {
+        margin: 30px 1rem;
+        padding: 1rem;
+    }
+
+    .about-title {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-section {
+        margin: 30px 1rem;
+        padding: 0.5rem;
+    }
+}

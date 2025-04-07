@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script data-ad-client="ca-pub-4239518651987758" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9QDCNTY1F"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T9QDCNTY1F');
+    </script>
+    <link rel="icon" href="../../logo_fix.png" height=250px>
+    <meta name="theme-color" content="#001f3f"/>
+    <meta name="google-site-verification" content="JJt8s-bShfClSaIksS6BEHrJq7gFqDScaqKzsULaaH4" />
+    <title>Eid Blessing Hunter - Berburu THR dan Cookies - A Game By Fikri Mulyana Setiawan</title>
+    <meta name="title" content="Eid Blessing Hunter - Fikri Notes">
+    <meta name="description" content="Game ini merupakan bagian dari project tahunan yang dikerjakan oleh Fikri Mulyana Setiawan dalam rangka memeriahkan hari raya idul fitri setiap tahunnya.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fikrinotes.netlify.app/">
+    <meta property="og:title" content="Eid Blessing Hunter - Fikri Notes">
+    <meta property="og:description" content="Game ini merupakan bagian dari project tahunan yang dikerjakan oleh Fikri Mulyana Setiawan dalam rangka memeriahkan hari raya idul fitri setiap tahunnya.">
+    <meta property="og:image" content="https://fikrinotes.netlify.app/metaTag.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fikrinotes.netlify.app/">
+    <meta property="twitter:title" content="Eid Blessing Hunter - Fikri Notes">
+    <meta property="twitter:description" content="Game ini merupakan bagian dari project tahunan yang dikerjakan oleh Fikri Mulyana Setiawan dalam rangka memeriahkan hari raya idul fitri setiap tahunnya.">
+    <meta property="twitter:image" content="https://fikrinotes.netlify.app/metaTag.jpg">
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/canvas-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="title">Eid Blessing Hunter</div>
+    <canvas id="gameCanvas"></canvas>
+    <button onclick="startGame()" id="playButton">Play Game</button>
+
+    <div id="gameOver" style="display: none;">
+        <h1>Game Over !</h1>
+        <p id="finalScore">Skor anda : 40</p>
+
+        <div id="restart">
+            <a href="/index.html" type="button">Ulangi Game</a>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <div class="about">
+            <p class="about-title">Tentang game Eid Blessing Hunter </p> <hr />
+            <p class="about-content">Game ini merupakan bagian dari project tahunan yang dikerjakan oleh Fikri Mulyana Setiawan dalam rangka memeriahkan hari raya idul fitri setiap tahunnya. Jika pada tahun-tahun sebelumnya project yang dikerjakan merupakan project berbasis desain visual, maka pada tahun ini (2025 - 1446 H) project yang dikerjakan fikri merupakan sebuah game berbasis web yang dapat dimainkan melalui PC ataupun smartphone. </p> 
+            <p class="about-title">The Game's Rules</p>
+            <p class="about-content">Selama permainan, akan ada 4 objek yang akan jatuh, yaitu uang (THR), cookie, petasan dan lalat. Pemain diminta untuk mengumpulkan THR dan cookie sebanyak mungkin sembari menghindari petasan dan lalat. Setiap kali pemain mendapatkan THR, maka skor pemain akan meningkat sebesar 3, sedangkan jika mendapatkan cookie, skor pemain akan meningkat sebesar 1. sebaliknya, jika pemain mendapatkan petasan atau lalat, skor pemain akan berkurang sebesar -4. Pada game ini terdapat sistem level, dimana pemain akan naik level setiap kali mencapai skor kelipatan 5. seiring meningkatnya level, item yang jatuh akan semakin banyak dan semakin cepat, tentunya akan membuat game ini semakin menantang. have fun!</p> 
+            <p class="about-title" id="guide">How To Play?</p>
+            <p class="about-content">Pada game ini, pemain akan diminta untuk <b>menggerakkan keranjang dengan tombol panah (untuk PC) atau dengan cara menggeser keranjang (pada perangkat touchscreen)</b> dengan tujuan untuk mengumpulkan item yang berguna, yaitu uang (THR) dan cookie.</p>
+            <p class="about-content">
+            As you can see, there are still some bugs in this game.  if you want to contribute to improve this game, contact me <a class="text-decoration-none" href="https://fikrinotes.netlify.app/contact-me">here</a>.
+            </p>
+            <p class="about-title">Report Bug(s)</p>
+            <p class="about-content"> if you find some bug(s),<a class="text-decoration-none" href="https://fikrinotes.netlify.app/contact-me">click here</a> to report it to me.</p>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <a href="/">Homepage</a>
+                <a href="/javascriptproject-menu/">Javascript Project</a>
+                <a href="/physics_menu">Physics Blog</a>
+                <a href="/computerscience">Computer Science</a>
+            </div>
+            <div class="footer-column">
+                <h3>More</h3>
+                <a href="/contact-me">Contact</a>
+                <a href="/termofuse">Terms Of Use</a>
+                <a href="/math-menu">Mathematics Blog</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="dmca-badge">
+                <a href="//www.dmca.com/Protection/Status.aspx?ID=f475e6cd-4ea7-41fb-8d13-b438de7639db">
+                    <img src="https://images.dmca.com/Badges/dmca-badge-w150-5x1-10.png?ID=f475e6cd-4ea7-41fb-8d13-b438de7639db" alt="DMCA Protection Status" />
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Fikri Mulyana Setiawan. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
